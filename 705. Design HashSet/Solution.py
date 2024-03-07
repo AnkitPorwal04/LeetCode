@@ -7,7 +7,10 @@ class MyHashSet:
         self.hashset.add(key)
 
     def remove(self, key: int) -> None:
-        self.hashset.remove(key)
+        if key in self.hashset:
+            self.hashset.remove(key)
+        else:
+            return False
 
     def contains(self, key: int) -> bool:
         return True if key in self.hashset else False

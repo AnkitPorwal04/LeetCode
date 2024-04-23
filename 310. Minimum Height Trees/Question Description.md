@@ -16,22 +16,29 @@ The height of a rooted tree is the number of edges on the longest downward path 
 
 Example 1:
 
+![e1](https://github.com/AnkitPorwal04/LeetCode/assets/96345105/8861e281-f212-496b-9f06-ce85916694ce)
 
 Input: n = 4, edges = [[1,0],[1,2],[1,3]]
+
 Output: [1]
+
 Explanation: As shown, the height of the tree is 1 when the root is the node with label 1 which is the only MHT.
+
 Example 2:
 
+![e2](https://github.com/AnkitPorwal04/LeetCode/assets/96345105/3189b0fa-51e3-422d-a3fd-fc384027c3eb)
 
 Input: n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]
+
 Output: [3,4]
  
 
 Constraints:
-
+```
 1 <= n <= 2 * 104
-edges.length == n - 1
-0 <= ai, bi < n
-ai != bi
-All the pairs (ai, bi) are distinct.
+edges.length == n - 1 \n
+0 <= ai, bi < n \n
+ai != bi \n
+All the pairs (ai, bi) are distinct. \n
 The given input is guaranteed to be a tree and there will be no repeated edges.
+```

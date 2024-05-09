@@ -1,10 +1,16 @@
-class Solution:
-    def destCity(self, paths: List[List[str]]) -> str:
-        source = []
-        dest = []
-        for i in paths:
-            source.append(i[0])
-            dest.append(i[1])
-        for i in dest:
-            if i not in source:
-                return i
+class Codec:
+
+    def encode(self, longUrl: str) -> str:
+        """Encodes a URL to a shortened URL.
+        """
+        return longUrl
+
+    def decode(self, shortUrl: str) -> str:
+        """Decodes a shortened URL to its original URL.
+        """
+        return shortUrl
+        
+
+# Your Codec object will be instantiated and called as such:
+# codec = Codec()
+# codec.decode(codec.encode(url))

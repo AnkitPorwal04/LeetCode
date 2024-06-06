@@ -1,0 +1,12 @@
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:
+        n = len(nums)-1
+        if n == 0:
+            return 0
+        while True:
+            max_ind = nums.index(max(nums))
+            if ((max_ind>0) and (max_ind<n) and (nums[max_ind]>nums[max_ind-1]) and (nums[max_ind]>nums[max_ind + 1])) or (max_ind == 0 and nums[max_ind] > nums[max_ind + 1]) or (max_ind == n and nums[max_ind] > nums[max_ind - 1]):
+                return max_ind
+            else:
+                nums.pop(max_ind)
+                continue

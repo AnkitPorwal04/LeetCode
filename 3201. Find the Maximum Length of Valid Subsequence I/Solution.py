@@ -11,7 +11,6 @@ class Solution:
             else:
                 all_odd += 1
 
-        for i in nums:
             if odd_even % 2 == 0:
                 if i % 2 == 1:
                     odd_even += 1

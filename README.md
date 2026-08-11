@@ -3,7 +3,7 @@ Hey! Here you will find the solutions to the leetcode problems which I have solv
 
 Just search for the problem number or name and get the solution.
 
-**My leetcode accounts: 
+**My leetcode account:**
 <br>
 Ankit Porwal: https://leetcode.com/ankitporwal/
 
